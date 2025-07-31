@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(212, 45%, 89%);
+  font-family: "Outfit", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 320px;
+  width: 90%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.card-content {
+  max-width: 280px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 10px;
+}
+
+h2 {
+  color: hsl(218, 44%, 22%);
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+p {
+  font-size: 15px;
+  color: hsl(220, 15%, 55%);
+  margin: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Responsive desktop (a partir de 1024px) */
+@media (min-width: 1024px) {
+  .card {
+    max-width: 360px;
+    padding: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
